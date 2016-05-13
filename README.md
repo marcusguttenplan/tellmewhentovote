@@ -1,6 +1,8 @@
 # tellmewhentovote
 Dev repo for [tellmewhentovote.com](http://tellmewhentovote.com), a database of upcoming polling days by state and date.
 
+![screencap](http://blackhole.impractic.al/down/tmwtv.png)
+
 ##usage
 
 <b>tellmewhentovote</b> is built on the MEAN stack.
