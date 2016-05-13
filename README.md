@@ -38,3 +38,5 @@ These will in turn output:
 Database connection ready
 App now running on port 8080
 ```
+
+<b>All client-side assets are located in </b>`public/`
