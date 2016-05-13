@@ -1,0 +1,27 @@
+<div class="jumbotron calendar">
+  <h2>CAN YOU VOTE ON</h2>
+  <time class="month-day-year">{{ currentTime.time | date }}</time>
+  <time class="hours-minutes">AT {{ currentTime.time | date:'h:mm a' }}??</time>
+</div>
+
+<div class="container currentEvents">
+</div>
+
+<div class="container lister">
+<h4 style="padding-left: 5px; margin-bottom: 5px;">Upcoming Voting Days</h4>
+</div>
+
+<div class="container lister">
+  <table class="table table-hover">
+    <tbody ng-repeat="date in dates | orderBy:'date'">
+      <tr ng-click="isOpen=!isOpen"  style="cursor:pointer">
+        <td>
+          <!-- <a ng-href="/dates/{{contact._id}}"> -->{{ date.state }} <span class="pull-right"><strong>{{ date.date }}</strong></span><!-- </a> -->
+        </td>
+      </tr>
+      <tr ng-if="isOpen" class="dropdown" layout="column" layout-align="center left">
+		  <td>{{ date.details }}</td>
+	  </tr>
+    </tbody>
+  </table>
+</div>

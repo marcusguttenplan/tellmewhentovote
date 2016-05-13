@@ -1,0 +1,24 @@
+{
+  "name": "tellmewhen",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "angular-datamaps": "*",
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "debug": "*",
+    "express": "*",
+    "jade": "*",
+    "mongodb": "^2.1.18",
+    "morgan": "*",
+    "serve-favicon": "*"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-plumber": "*",
+    "gulp-sass": "*"
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tell Me When to Vote</title>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link href="stylesheets/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top"
+     role="navigation" bs-navbar>
+  <div class="navbar-header">
+    <a class="navbar-brand" href="/">
+      TellMe<strong>When</strong>ToVote</a>
+  </div>
+  <ul class="nav navbar-nav pull-right">
+    <li data-match-route="/$"><a href="/">Home</a></li>
+    <li data-match-route="/list"><a href="/dates">List</a></li>
+  </ul>
+</div>
+
+
+<div ng-view></div>
+
+<div class="footer">
+  <a class="btn" href="#"></a>
+</div>
+
+<script src="vendor/angular.js"></script>
+<script src="vendor/angular-datamaps.min.js"></script>
+<script src="vendor/angular-strap.js"></script>
+<script src="vendor/angular-strap.tpl.js"></script>
+<script src="vendor/angular-messages.js"></script>
+<script src="vendor/angular-resource.js"></script>
+<script src="vendor/angular-route.js"></script>
+<script src="vendor/d3.min.js"></script>
+<script src="vendor/moment.min.js"></script>
+<script src="vendor/topojson.min.js"></script>
+
+<script src="app.js"></script>
+</body>
+</html>
