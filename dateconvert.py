@@ -9,5 +9,5 @@ with open("_dates.csv", 'rb') as f:
 	        if date < datetime.datetime.strptime ("2014-09-26", "%Y-%m-%d")and date > datetime.datetime.strptime ("2014-09-25", "%Y-%m-%d"):
 		        count = count+1
 		    result = (count/3927.2)*100
-			print "Le fichier date du", date
-			print "Le SLA est de :", result, "%"
+			print "Date:", date
+			print "SLA:", result, "%"
